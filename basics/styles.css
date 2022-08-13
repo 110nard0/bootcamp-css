@@ -1,0 +1,22 @@
+/* the semi-colon is essential for your code to work! */
+h1 {
+    font-family: Papyrus, Lucida Grande, monospace;
+}
+
+h2 {
+    color: indigo ;
+}
+
+button {
+    color: rgb(21, 128, 0);
+    background-color: rgba(52, 233, 224, 0.959);
+}
+
+p {
+    color: hotpink ;
+}
+
+/* the octothorpe is used to write RGB values */ 
+ body {
+    background-color: #000000; 
+}

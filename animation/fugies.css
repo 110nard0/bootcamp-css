@@ -1,0 +1,18 @@
+section {
+    width: 70%;
+    height: 800px;
+    margin: 0 auto;
+
+    /* background-image: url(https://images.unsplash.com/photo-1517997443305-07a78b5fd77b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80); 
+    background-size: cover;
+    background-position: top; */
+
+    /* when setting background position/size this syntax must be used "x/y"
+        multiple backgrounds can also be added after one another with no-repeat*/
+    background: no-repeat center/cover url(https://images.unsplash.com/photo-1517997443305-07a78b5fd77b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80);
+}
+
+h1 {
+    font-size: 100px;
+    color: rgb(15, 168, 173);
+}

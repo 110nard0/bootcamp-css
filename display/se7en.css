@@ -1,0 +1,49 @@
+/* this is used to change element display properties
+h1  {
+    background-color: palegoldenrod;
+    border: 1px black solid;
+    display: inline
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px black solid;
+    display: block;
+}
+*/
+
+/* DISPLAY:IN-LINE: width & height ignored. padding and margin push elements away horizontally but not vertically */
+span {
+    background-color: palevioletred;
+    border: 1px red solid;
+    width: 500px;
+    padding: 50px;
+    margin: 50px;
+}
+
+/* DISPLAY:BLOCK: width, height, padding & margin were respected. block elements break the flow of a document. */
+h1 {
+    background-color: paleturquoise;
+    border: 1px black solid;
+    width: 300px;
+    height: 50px;
+    padding: 50px;
+    margin: 100px;
+}
+
+/* DISPLAY:INLINE-BLOCK: behaves like inline element except width, height, margin & padding are respected */
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    display: inline-block;
+ /* padding: 50px; use this to inspect div in chrome devtools! */
+    margin: 50px;
+}
+
+/* DISPLAY:NONE: hides the element from browser window
+    h1 {
+        display: none;
+    }
+*/

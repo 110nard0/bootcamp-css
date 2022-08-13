@@ -1,0 +1,69 @@
+/*  width and height affect the content box area */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #e5989b;
+}
+
+/* padding is the field between the content and the border box */
+h1 {
+    background-color: pink;
+    width: 200px;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin: auto;
+    border: 1px red solid;
+}
+
+/* border is the enclosing box surrounding the content with its padding*/
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: dashed double;
+    /* box-sizing: border-box; */
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+/* shorthand syntax: border properties: style || color || style */
+#two {
+    background-color: #b5838d;
+    border: 3px #ffcdb2 dotted;
+    box-sizing: content-box;
+    border-radius: 15px;
+    margin: 200px;
+}
+
+/* each border property has a variation for top, right, bottom and left */
+#three {
+    background-color: #6d6875;
+    border: 4px #382746 inset;
+    border-left-width: 8px;
+    border-radius: 50%; /* border-radius can be used to make circles! */
+}
+
+ /* shorthand syntax: padding properties: i. all 4 sides ii. vertical and horizontal iii. top horizontal bottom iv. top right bottom left */
+ #un {
+     padding: 20px;
+     border: 1px red solid;
+ }
+
+ #deux {
+     padding: 0px 20px;
+ }
+
+ #trois {
+     padding: 5px 10px 15px;
+ }
+
+ #quatre {
+     padding: 10px 20px 30px 40px;
+ }
+
+ /* margin is the spacing between neighboring block containers */
+ body {
+   margin: 0;
+ }

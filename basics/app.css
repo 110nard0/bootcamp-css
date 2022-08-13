@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: #0d2fa0 underline solid ;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+p {
+    line-height: 2;
+    font-family: Verdana;
+}
+
+/* you can shorten RGB values to 3 digit form if the first and last digits are the same */
+h2, h3 {
+    color: #c8e ;
+    text-align: center;
+}
+
+/* inherit is used to transfer styles from parent to children selectors if not done automatically */
+form {
+    color: saddlebrown;
+}
+
+button, input {
+    color: inherit; 
+}

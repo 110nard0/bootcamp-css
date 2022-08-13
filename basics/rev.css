@@ -1,0 +1,138 @@
+/* the asteriks selector affects all elements while applying changes.
+    * {
+    color: lightcoral;
+    background-color: mediumspringgreen ;
+    }
+*/
+
+body {
+    background-color: #f1faee ;
+}
+
+button {
+    background-color: #a8dadc ;
+    font-size: 20px ;
+}
+
+/* here, the comma is used to group element selectors
+    ELEMENT Selectors affect all the content on the page wrapped in the specified element */
+h1,h2 {
+    color: #1d3557 ;
+}
+
+/* here, the octothorpe is used as an id selector
+    ID Selectors link to the specified id */
+#signup {
+    background-color: #1d3557;
+    color: #a8dadc ;
+}
+
+span {
+    color: #457b9d ;
+}
+
+/* here, the period is used as a class selector
+    a class attribute is used like an id but can be employed across multiple elements */
+.tag {
+    background-color: #bb06069d ; 
+    color: #ffffff ; 
+    font-size: 16px ;
+}
+
+section.post {
+    background-color: #d0e7c9 ;
+}
+
+
+/* here, a space is used to select descendants of the preceding element selector
+    DESCENDANT Selectors style only the specified children elements on the page */
+span a {
+    color: #457b9d ;
+}
+
+/* you can even do the above using a class selector combo! */
+.post a {                           
+    color: #457b9d ;
+    font-weight: 700 ;
+    text-decoration: none ;
+}
+
+
+footer a {
+    color: #e63946 ;
+}
+
+/*here, a + is used as a combinator to select the element following it 
+    ADJACENT Selectors style the latter element follwing the former but not nest- ing/ed in/to it resp. */
+input + button {
+    background-color: palevioletred ;
+}
+
+h2 + button {
+    background-color: magenta; 
+    color: mediumblue;
+    font-size: 15px ;
+}
+
+/* here, a > is used to select the element which is the direct descendant of the preceding element
+DIRECT CHILD Selectors style content wrapped in the element of the selector which succedes it */
+ul > li {
+    list-style-type: circle;
+}
+
+footer > a {
+    color: #1e0acc
+}
+
+/* here, [] are used to select attributes */
+input[type="password"] {
+    color: indigo ;
+}
+
+/* here, : is added to modify a particular state of the selector
+PSEUDO CLASS Selectors are keywords added to a selector that specifies a special state of the selected elements */
+.post button:hover {
+    background-color: #e63946 ;
+    color: #f1faee ;
+}
+
+.post a:hover {
+    text-decoration: underline ;
+}
+
+.post button:active {
+    background-color: #02c39a ;
+}
+
+section:nth-of-type(2n) {
+background-color: #f1faee ;
+}
+
+/* here, :: are used to specify a section of the content contained within the specified element
+PSEUDO ELEMENT Selectors are added to style a particular part of the selected elements */
+h2::first-letter {
+    font-size: 35px ;
+}
+
+p::first-line {
+    color: rgb(56, 42, 131) ;
+}
+
+p::selection {
+    background-color: #fbcf49;
+}
+
+/*
+p::before {
+    font-size: 30px ;
+}
+
+p::after {
+    font-size: 50px ;
+} */
+
+/* !important is used to override specificity and style enclosed content.
+    Not recommended; use on external stylesheets in order to preserve the cascade */
+p {
+    background-color: rgb(212, 208, 208) !important;
+}

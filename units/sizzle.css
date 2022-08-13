@@ -1,0 +1,74 @@
+/* pixels are absolute units used to specify size */
+#percentages {
+    background-color: #6d6875;
+    width: 500px;
+    height: 250px;
+}
+
+/* percentages are used in relation to the value of the parent container */
+#percentages div {
+    background-color: #e5989b;
+    width: 50%;
+    height: 25%;
+}
+
+/* percentages are also used in relation to a value of the element itself   */
+#ems {
+    font-size: 20px;
+}
+
+#ems h1 {
+    font-size: 40px;
+    border: 1px solid red;
+    line-height: 200%;
+}
+
+/* em is used in relation to the font size of parent element in the first instance
+  but is equal to the font size of the element itself in the second instance */
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+/* the buttons all over the page are sized in relation to their parent elemnents' font size */
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+/* ems can get really clunky as they stack size property exponentially */
+#ems ul {
+    font-size: 0.5em;
+}
+
+/* rems are relative to the root html element's font size */
+#rems h2 {
+font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1.5rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
+
+html {
+    font-size: 20px;
+}
